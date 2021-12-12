@@ -44,8 +44,49 @@
   padding: 6px 12px 6px 12px;
   margin-top: 32px;
   border-radius: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
 }
 .btn:hover {
   background-color: #ffffff;
-  counter-reset: #49a6e9;
+  color: #49a6e9;
+}
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(19, 195, 226, 0.5);
+}
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 18% auto;
+  width: 45.7%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 7px 20px rgba(0, 0, 0, 0.17);
+  animation: modalopen 1s;
+  padding: 70px;
+  border-radius: 0.5rem;
+  position: relative;
+}
+#closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+  cursor: pointer;
+  color: hsl(360, 67%, 44%);
+}
+.content {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  color: #102a42;
 }
